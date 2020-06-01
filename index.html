@@ -21,19 +21,13 @@
     <script>
         let graphObj = {
             nodes: [
-                {
-                    name: 'A',
-                    ip: '1.1.1.1',
-                },
-                {
-                    name: 'B',
-                    ip: '1.1.1.1',
-                },
-                {
-                    name: 'C',
-                    ip: '1.1.1.1',
-                },
+                {name: 'A', ip: '1.1.1.1'},
+                {name: 'B', ip: '1.1.1.1'},
+                {name: 'C', ip: '1.1.1.1'}
             ],
+            links: [
+                {srcNode: 'A', srcPort: 'A1', destNode: 'B', destPort: 'B1'}
+            ]
         };
 
         let cp = new CircuitGraph({data: graphObj});
